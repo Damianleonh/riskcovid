@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityCalculadora">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="7dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/ColorPrimary"
+            android:orientation="vertical"
+            android:paddingTop="70dp">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/ColorPrimary"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="10dp"
+                app:strokeColor="#FFFFFF"
+                app:strokeWidth="1dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="19dp"
+                    android:text="Edad: "
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp"></TextView>
+
+                <Spinner
+                    android:id="@+id/actCalSpinnerEdad"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="100dp"></Spinner>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="150dp"
+                    android:text="años"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp"></TextView>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#fecc9d"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="19dp"
+                    android:text="Peso: "
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp" />
+
+                <Spinner
+                    android:id="@+id/actCalSpinnerPeso"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="100dp"
+                    android:backgroundTint="#fecc9d"></Spinner>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="155dp"
+                    android:text="kg"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp"></TextView>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#fecc9d"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="19dp"
+                    android:text="Estatura: "
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp" />
+
+                <Spinner
+                    android:id="@+id/actCalSpinnerEstatura"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="150dp"
+                    android:backgroundTint="#fecc9d"></Spinner>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="210dp"
+                    android:text="cm"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp"></TextView>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="340dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#fecc9d"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="19dp"
+                    android:text="Contaco con\nPersonas: "
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp" />
+
+                <Spinner
+                    android:id="@+id/actCalSpinnerContacto"
+                    android:layout_width="140dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="230dp"
+                    android:backgroundTint="#fecc9d"></Spinner>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="340dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#fecc9d"
+                app:cardCornerRadius="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="19dp"
+                    android:text="Familiares\nen casa: "
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp"></TextView>
+
+                <Spinner
+                    android:id="@+id/actCalSpinnerFamilia"
+                    android:layout_width="160dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="100dp"
+                    android:backgroundTint="#fecc9d"></Spinner>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="340dp"
+                android:layout_height="350dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#fecc9d"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Padecimientos:"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp"></TextView>
+
+
+                <LinearLayout
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="20dp"
+                    android:layout_marginTop="60dp">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="83dp"
+                        android:onClick="onCheckboxClicked"
+                        android:text="Hipertension"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp"
+                        android:id="@+id/actCalCheckBoxHipert"></CheckBox>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="83dp"
+                        android:onClick="onCheckboxClicked"
+                        android:text="Diabetes"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp"
+                        android:id="@+id/actCalCheckBoxDiabet"></CheckBox>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="83dp"
+                        android:onClick="onCheckboxClicked"
+                        android:text="Inmunosupresión "
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp"
+                        android:id="@+id/actCalCheckBoxInmun"></CheckBox>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="83dp"
+                        android:onClick="onCheckboxClicked"
+                        android:text="Enfermedad\nrenal"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp"
+                        android:id="@+id/actCalCheckBoxEnfRen"></CheckBox>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="83dp"
+                        android:onClick="onCheckboxClicked"
+                        android:text="Enfermedad\npulmonar"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp"
+                        android:id="@+id/actCalCheckBoxEnfPul"></CheckBox>
+
+                    </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#fecc9d"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="19dp"
+                    android:text="Vacunacion: "
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp"></TextView>
+
+                <Spinner
+                    android:id="@+id/actCalSpinnerVacuna"
+                    android:layout_width="170dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="200dp"
+                    android:backgroundTint="#fecc9d"></Spinner>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/actCalBtnCalcular"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="100dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="Calcular"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                app:cornerRadius="10dp"></com.google.android.material.button.MaterialButton>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

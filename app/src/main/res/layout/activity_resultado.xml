@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityResultado">
+
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="7dp"
+        android:background="@color/ColorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/ColorPrimary"
+            android:orientation="vertical"
+            android:paddingTop="70dp">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/loginContainerEmail"
+                android:layout_width="340dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="#FFFEFC"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="5dp"
+                app:strokeColor="#FFFFFF"
+                app:strokeWidth="3dp">
+
+
+                <ProgressBar
+                    android:id="@+id/actResulProgressBar"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:progress="20"
+                    android:progressBackgroundTint="@color/ColorPrimary"
+                    android:progressTint="#E41313" />
+
+
+                <TextView
+                    android:id="@+id/actResulTextvPorcentaje"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="20%"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp"></TextView>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="45dp"
+                android:paddingLeft="8dp"
+                android:text="Resultado"
+                android:textColor="#FFFFFF"
+                android:textSize="30dp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="45dp"
+                android:layout_marginEnd="45dp"
+                android:padding="10dp"
+                android:text="Tu resultado mostro un 20% de probabilidad de contrer la enfermedad COVID y esta resulte prerjudicial. Cuentas con un IMC de 30.07 como resultado normal. Cuentas con 0 factores de riezgo."
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"></TextView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="340dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/ColorPrimary"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp"
+                app:strokeColor="#FFFFFF"
+                app:strokeWidth="3dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_vertical"
+                    android:paddingRight="20dp"
+                    android:src="@drawable/diabetes"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Diabetes"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="190dp"
+                    android:layout_marginTop="12dp"
+                    android:text="*Tienes este factor de riesgo"
+                    android:textColor="#E41313"
+                    android:textSize="11dp"></TextView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Conoce la informacion mas importante de como cuidarte y tratar la diabetes"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp"></TextView>
+
+                <Button
+                    android:id="@+id/actResulBtnDiabetes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#00262626"></Button>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="340dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/ColorPrimary"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp"
+                app:strokeColor="#FFFFFF"
+                app:strokeWidth="3dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_vertical"
+                    android:paddingRight="20dp"
+                    android:src="@drawable/hipertension"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Hipertension"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="190dp"
+                    android:layout_marginTop="12dp"
+                    android:text="*Tienes este factor de riesgo"
+                    android:textColor="#E41313"
+                    android:textSize="11dp"></TextView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Conoce la informacion mas importante de como cuidarte y tratar la hipertension"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp"></TextView>
+
+                <Button
+                    android:id="@+id/actResulBtnHipertension"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#00262626"></Button>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="340dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/ColorPrimary"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp"
+                app:strokeColor="#FFFFFF"
+                app:strokeWidth="3dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+
+                    android:src="@drawable/pulmones"></ImageView>
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Enf.Pulmonar"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="190dp"
+                    android:layout_marginTop="12dp"
+                    android:text="*Tienes este factor de riesgo"
+                    android:textColor="#E41313"
+                    android:textSize="11dp"></TextView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Conoce la informacion mas importante de como cuidarte y tratar la enfermedad pulmonar"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp"></TextView>
+
+                <Button
+                    android:id="@+id/actResulBtnPulmon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#00262626"></Button>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="340dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/ColorPrimary"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp"
+                app:strokeColor="#FFFFFF"
+                app:strokeWidth="3dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/rinon"></ImageView>
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Enf.Renal"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="190dp"
+                    android:layout_marginTop="12dp"
+                    android:text="*Tienes este factor de riesgo"
+                    android:textColor="#E41313"
+                    android:textSize="11dp"></TextView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Conoce la informacion mas importante de como cuidarte y tratar la enfermedad renal"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp"></TextView>
+
+                <Button
+                    android:id="@+id/actResulBtnRenal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#00262626"></Button>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="340dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/ColorPrimary"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp"
+                app:strokeColor="#FFFFFF"
+                app:strokeWidth="3dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/sistema_inmune"></ImageView>
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="45dp"
+                    android:text="Inmunosupresion"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="12dp"
+                    android:text="*Tienes este factor de riesgo"
+                    android:textColor="#E41313"
+                    android:textSize="11dp"></TextView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Conoce la informacion mas importante de como cuidarte y tratar la inmunosupresion"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp"></TextView>
+
+                <Button
+                    android:id="@+id/actResulBtnInmunosup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#00262626"></Button>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="340dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/ColorPrimary"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp"
+                app:strokeColor="#FFFFFF"
+                app:strokeWidth="3dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/las_personas_de_edad"></ImageView>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Edad avanzada"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="190dp"
+                    android:layout_marginTop="12dp"
+                    android:text="*Tienes este factor de riesgo"
+                    android:textColor="#E41313"
+                    android:textSize="11dp"></TextView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Conoce la informacion mas importante de como cuidarte con una edad mayor"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp"></TextView>
+
+                <Button
+                    android:id="@+id/actResulBtnEdadav"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#00262626"></Button>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:text="Salir"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="50dp"
+                android:backgroundTint="#FFFFFF"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                app:cornerRadius="10dp"
+                android:id="@+id/actResulBtnSalir">
+            </com.google.android.material.button.MaterialButton>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
