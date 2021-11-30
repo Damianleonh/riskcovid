@@ -54,6 +54,7 @@
                 </TextView>
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/email"
                     android:layout_width="150dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center_vertical"
@@ -97,6 +98,7 @@
                 </TextView>
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/password"
                     android:layout_width="150dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center_vertical"
