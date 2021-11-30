@@ -64,9 +64,11 @@
                 android:layout_height="50dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
-                android:backgroundTint="#fecc9d"
+                android:backgroundTint="@color/ColorPrimary"
                 app:cardCornerRadius="10dp"
-                app:cardElevation="5dp">
+                app:cardElevation="5dp"
+                app:strokeColor="#FFFFFF"
+                app:strokeWidth="1dp">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -101,9 +103,11 @@
                 android:layout_height="50dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
-                android:backgroundTint="#fecc9d"
+                android:backgroundTint="@color/ColorPrimary"
                 app:cardCornerRadius="10dp"
-                app:cardElevation="5dp">
+                app:cardElevation="5dp"
+                app:strokeColor="#FFFFFF"
+                app:strokeWidth="1dp">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -138,9 +142,11 @@
                 android:layout_height="100dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
-                android:backgroundTint="#fecc9d"
+                android:backgroundTint="@color/ColorPrimary"
                 app:cardCornerRadius="10dp"
-                app:cardElevation="5dp">
+                app:cardElevation="5dp"
+                app:strokeColor="#FFFFFF"
+                app:strokeWidth="1dp">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -167,8 +173,10 @@
                 android:layout_height="100dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
-                android:backgroundTint="#fecc9d"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/ColorPrimary"
+                app:cardCornerRadius="10dp"
+                app:strokeColor="#FFFFFF"
+                app:strokeWidth="1dp">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -194,9 +202,11 @@
                 android:layout_height="350dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
-                android:backgroundTint="#fecc9d"
+                android:backgroundTint="@color/ColorPrimary"
                 app:cardCornerRadius="10dp"
-                app:cardElevation="5dp">
+                app:cardElevation="5dp"
+                app:strokeColor="#FFFFFF"
+                app:strokeWidth="1dp">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -274,9 +284,11 @@
                 android:layout_height="50dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
-                android:backgroundTint="#fecc9d"
+                android:backgroundTint="@color/ColorPrimary"
                 app:cardCornerRadius="10dp"
-                app:cardElevation="5dp">
+                app:cardElevation="5dp"
+                app:strokeColor="#FFFFFF"
+                app:strokeWidth="1dp">
 
                 <TextView
                     android:layout_width="wrap_content"
