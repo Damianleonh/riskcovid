@@ -108,10 +108,6 @@ public class ActivityResultado extends AppCompatActivity implements View.OnClick
                 startActivity(i5);
                 break;
 
-            case R.id.actResulBtnSalir:
-                Intent salirintent = new Intent(ActivityResultado.this,MainActivity.class);
-                startActivity(salirintent);
-
         }
     }
 }
