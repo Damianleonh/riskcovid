@@ -41,8 +41,9 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private FusedLocationProviderClient mFusedLocation;
     private final static int LOCATION_REQUEST_CODE = 1;
 
-    DatabaseReference mDatabase;
+    Double latitude, longitud;
 
+    DatabaseReference mDatabase;
 
     LocationCallback mLocationCallback = new LocationCallback() {
         @Override
@@ -55,6 +56,10 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                     ));
                     double lat = location.getLatitude();
                     double longi = location.getLongitude();
+
+                    latitude = lat;
+                    longitud = longi;
+
                     Toast.makeText(MainActivity.this, "LATITUD: " + lat + "\nLONGITUD: " + longi, Toast.LENGTH_SHORT).show();
                 }
             }
@@ -93,6 +98,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         mMainBtnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Intent intent = new Intent(MainActivity.this, Register.class);
                 startActivity(intent);
             }
