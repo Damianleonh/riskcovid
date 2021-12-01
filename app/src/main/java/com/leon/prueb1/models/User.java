@@ -1,30 +1,32 @@
 package com.leon.prueb1.models;
 
 public class User {
-    String id;
-    String email;
 
-    public User(String id, String email) {
-        this.id = id;
-        this.email = email;
+    Double longi;
+    Double lati;
+
+    public User(Double longi, Double lati) {
+        this.longi = longi;
+        this.lati = lati;
     }
 
     public User() {
     }
 
-    public String getId() {
-        return id;
+    public Double getLongi() {
+        return longi;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setLongi(Double longi) {
+        this.longi = longi;
     }
 
-    public String getEmail() {
-        return email;
+    public Double getLati() {
+        return lati;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setLati(Double lati) {
+        this.lati = lati;
     }
 }
+

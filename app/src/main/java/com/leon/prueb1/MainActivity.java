@@ -18,8 +18,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
+import com.firebase.geofire.GeoFire;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationCallback;
+import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationResult;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -28,8 +30,9 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.leon.prueb1.includes.MyToolbar;
-import com.google.android.gms.location.LocationRequest;
 
 public class MainActivity extends AppCompatActivity implements OnMapReadyCallback {
 
@@ -38,6 +41,10 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private com.google.android.gms.location.LocationRequest mLocationRequest;
     private FusedLocationProviderClient mFusedLocation;
     private final static int LOCATION_REQUEST_CODE = 1;
+    GeoFire geoFire;
+
+    DatabaseReference mDatabase;
+
 
     LocationCallback mLocationCallback = new LocationCallback() {
         @Override
@@ -65,6 +72,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         setContentView(R.layout.activity_main);
 
         MyToolbar.show(this, "Risk Covid", false);
+
+        mDatabase = FirebaseDatabase.getInstance().getReference();
 
         mFusedLocation = LocationServices.getFusedLocationProviderClient(this);
 
