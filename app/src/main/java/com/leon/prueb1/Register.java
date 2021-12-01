@@ -1,13 +1,13 @@
 package com.leon.prueb1;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -20,6 +20,7 @@ import com.leo.simplearcloader.ArcConfiguration;
 import com.leo.simplearcloader.SimpleArcDialog;
 import com.leo.simplearcloader.SimpleArcLoader;
 import com.leon.prueb1.includes.MyToolbar;
+import com.leon.prueb1.models.User;
 
 public class  Register extends AppCompatActivity {
 
@@ -80,7 +81,7 @@ public class  Register extends AppCompatActivity {
                             if (task.isSuccessful()){
                                 Toast.makeText(Register.this, "Registro exitoso", Toast.LENGTH_SHORT).show();
                                 String mid = mAuth.getCurrentUser().getUid();
-                                /*saveUser(mid, sCorreo);*/
+                                saveUser(mid, sCorreo);
                             }else{
                                 Toast.makeText(Register.this, "Fallo al registrar al usuario", Toast.LENGTH_SHORT).show();
                             }
@@ -99,7 +100,7 @@ public class  Register extends AppCompatActivity {
         }
     }
 
-    /*private void saveUser(String id, String email) {
+    private void saveUser(String id, String email) {
         User user = new User();
         user.setEmail(email);
 
@@ -115,6 +116,5 @@ public class  Register extends AppCompatActivity {
             }
         });
 
-    }*/
+    }
 }
-

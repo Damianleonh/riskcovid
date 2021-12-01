@@ -4,27 +4,18 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../../../layout/custom_preview.xml" value="0.18425925925925926" />
-        <entry key="..\:/Users/Huawei usr/StudioProjects/riskcovid/app/src/main/res/layout/activity_main.xml" value="0.1956521739130435" />
-        <entry key="..\:/Users/Huawei usr/StudioProjects/riskcovid/app/src/main/res/layout/activity_resultado.xml" value="0.264" />
-        <entry key="..\:/Users/edgar/AndroidStudioProjects/riskcovid/app/src/main/res/drawable-mdpi/btnintro.xml" value="0.2203125" />
-        <entry key="..\:/Users/edgar/AndroidStudioProjects/riskcovid/app/src/main/res/drawable-mdpi/selected.xml" value="0.2203125" />
-        <entry key="..\:/Users/edgar/AndroidStudioProjects/riskcovid/app/src/main/res/drawable-mdpi/shadoweffect.xml" value="0.2203125" />
-        <entry key="..\:/Users/edgar/AndroidStudioProjects/riskcovid/app/src/main/res/layout/activity_intro.xml" value="0.19010416666666666" />
-        <entry key="..\:/Users/edgar/AndroidStudioProjects/riskcovid/app/src/main/res/layout/activity_login.xml" value="0.25" />
-        <entry key="..\:/Users/edgar/AndroidStudioProjects/riskcovid/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/edgar/AndroidStudioProjects/riskcovid/app/src/main/res/layout/activity_register.xml" value="0.22" />
-        <entry key="..\:/Users/edgar/AndroidStudioProjects/riskcovid/app/src/main/res/layout/slide_screen.xml" value="0.20416666666666666" />
         <entry key="app/src/main/res/drawable/barra.xml" value="0.1609375" />
         <entry key="app/src/main/res/drawable/circle.xml" value="0.1609375" />
         <entry key="app/src/main/res/drawable/circular.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.18205128205128204" />
         <entry key="app/src/main/res/layout-v28/toolbar.xml" value="0.16875" />
-        <entry key="app/src/main/res/layout/activity_calculadora.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_calculadora.xml" value="0.30119176598049835" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.16" />
         <entry key="app/src/main/res/layout/activity_resultado.xml" value="0.25" />
         <entry key="app/src/main/res/layout/color_spinner_layout.xml" value="0.15364583333333334" />
+        <entry key="app/src/main/res/layout/slide_screen.xml" value="0.16979166666666667" />
         <entry key="app/src/main/res/layout/spinner_dropdown_layout.xml" value="0.15364583333333334" />
         <entry key="app/src/main/res/layout/toolbar.xml" value="0.15185185185185185" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.18205128205128204" />

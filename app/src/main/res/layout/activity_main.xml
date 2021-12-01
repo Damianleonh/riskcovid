@@ -15,28 +15,18 @@
         android:name="com.google.android.gms.maps.SupportMapFragment"></fragment>
 
     <LinearLayout
-        android:layout_marginTop="600dp"
+        android:layout_gravity="bottom"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
-        android:background="@color/ColorPrimary">
+        android:background="#00262626">
 
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="@color/ColorPrimaryButtons"
-            android:text="@string/registro"
-            android:textColor="#000000"
-            android:id="@+id/MainBtnRegister">
-        </Button>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:backgroundTint="@color/ColorPrimaryButtons"
+            android:backgroundTint="#43FFFFFF"
             android:text="Iniciar sesion"
             android:textColor="#000000"
             android:id="@+id/MainBtnLogin"></Button>
@@ -44,8 +34,8 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-            android:backgroundTint="@color/ColorPrimaryButtons"
+            android:layout_weight="1"
+            android:backgroundTint="#43FFFFFF"
             android:text="Calculadora"
             android:textColor="#000000"
             android:id="@+id/MainBtnCalculadora"></Button>
