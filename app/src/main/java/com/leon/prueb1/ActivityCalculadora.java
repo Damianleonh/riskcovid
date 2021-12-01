@@ -126,11 +126,20 @@ public class ActivityCalculadora extends AppCompatActivity implements AdapterVie
                     factoRiesgo = 100.0;
                 }
 
-                Toast.makeText(ActivityCalculadora.this,  factoRiesgo+"%" + " \nResultado imc: "+
-                        imcresultado+"\nFactores = "+factores, Toast.LENGTH_LONG).show();
 
+                //enviar
+                Toast.makeText(ActivityCalculadora.this,  factoRiesgo+"%" + " \nResultado imc: "+
+                        imc+"\nFactores = "+factores, Toast.LENGTH_LONG).show();
+
+
+                String nimc = imc+"";
+                String nfacr = factoRiesgo+"";
+                String nfac = factores+"";
 
                 Intent i = new Intent(ActivityCalculadora.this,ActivityResultado.class);
+                i.putExtra("factorRiesgo",nfacr);
+                i.putExtra("imcresultado",nimc);
+                i.putExtra("factores",nfac);
                 startActivity(i);
             }
         });
