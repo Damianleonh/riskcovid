@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     };
 
     //Resources
-    Button mMainBtnLogin, mMainBtnRegister, mMainBtnCalculadora;
+    Button mMainBtnRegister, mMainBtnCalculadora;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,8 +82,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         //++++++++++++++++++++++++++++++++++++++++++++++
 
-        mMainBtnLogin = findViewById(R.id.MainBtnLogin);
-        mMainBtnRegister = findViewById(R.id.MainBtnRegister);
+        mMainBtnRegister = findViewById(R.id.MainBtnLogin);
         mMainBtnCalculadora = findViewById(R.id.MainBtnCalculadora);
 
 
@@ -99,13 +98,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             }
         });
 
-        mMainBtnLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Login.class);
-                startActivity(intent);
-            }
-        });
 
         mMainBtnCalculadora.setOnClickListener(new View.OnClickListener() {
             @Override
