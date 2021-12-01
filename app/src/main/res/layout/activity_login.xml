@@ -23,7 +23,8 @@
             app:cardCornerRadius="24dp">
 
             <com.google.android.material.card.MaterialCardView
-                android:layout_width="340dp"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="30dp"
                 android:layout_height="70dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="30dp"
@@ -43,24 +44,16 @@
                     android:src="@drawable/email">
                 </ImageView>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="73dp"
-                    android:text="Email: "
-                    android:textColor="#FFFFFF"
-                    android:textSize="35dp">
-                </TextView>
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/email"
-                    android:layout_width="150dp"
+                    android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="10dp"
                     android:layout_gravity="center_vertical"
                     android:hint="Ingresa tu email"
                     android:textColor="#FFFFFF"
-                    android:layout_marginLeft="185dp"
                     android:textColorHint="#FFFFFF"
                     android:inputType="textEmailAddress">
                 </com.google.android.material.textfield.TextInputEditText>
@@ -68,7 +61,8 @@
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
-                android:layout_width="340dp"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="30dp"
                 android:layout_height="70dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="120dp"
@@ -87,26 +81,18 @@
                     android:src="@drawable/padlock">
                 </ImageView>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="73dp"
-                    android:text="Pass: "
-                    android:textColor="#FFFFFF"
-                    android:textSize="35dp">
-                </TextView>
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/password"
-                    android:layout_width="150dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="70dp"
                     android:layout_height="50dp"
+                    android:layout_marginRight="10dp"
                     android:layout_gravity="center_vertical"
-                    android:hint="Ingresa tu pass"
+                    android:hint="Ingresa tu contraseña"
                     android:textColor="#FFFFFF"
-                    android:layout_marginLeft="185dp"
                     android:textColorHint="#FFFFFF"
-                    android:inputType="textEmailAddress">
+                    android:inputType="textPassword">
                 </com.google.android.material.textfield.TextInputEditText>
 
             </com.google.android.material.card.MaterialCardView>
@@ -128,7 +114,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="No tienes cuenta?"
+                android:text="¿No tienes cuenta?"
                 android:textSize="30dp"
                 android:textAlignment="center"
                 android:layout_marginTop="300dp"
@@ -138,7 +124,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Registrate para\nobtener seguimiento\nde tus datos"
+                android:text="Regístrate para\nobtener seguimiento\nde tus datos."
                 android:textSize="20dp"
                 android:textAlignment="center"
                 android:layout_marginTop="350dp"

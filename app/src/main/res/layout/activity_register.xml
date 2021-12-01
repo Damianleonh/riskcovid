@@ -44,23 +44,15 @@
                     android:src="@drawable/email">
                 </ImageView>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="73dp"
-                    android:text="Email: "
-                    android:textColor="#FFFFFF"
-                    android:textSize="35dp">
-                </TextView>
-
                 <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="150dp"
+                    android:id="@+id/emailreg"
+                    android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="10dp"
                     android:layout_gravity="center_vertical"
                     android:hint="Ingresa tu email"
                     android:textColor="#FFFFFF"
-                    android:layout_marginLeft="185dp"
                     android:textColorHint="#FFFFFF"
                     android:inputType="textEmailAddress">
                 </com.google.android.material.textfield.TextInputEditText>
@@ -88,25 +80,18 @@
                     android:src="@drawable/padlock">
                 </ImageView>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="73dp"
-                    android:text="Pass: "
-                    android:textColor="#FFFFFF"
-                    android:textSize="35dp">
-                </TextView>
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="150dp"
+                    android:id="@+id/pass"
+                    android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_gravity="center_vertical"
-                    android:hint="Ingresa tu pass"
+                    android:hint="Ingresa tu contraseña"
                     android:textColor="#FFFFFF"
-                    android:layout_marginLeft="185dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="10dp"
                     android:textColorHint="#FFFFFF"
-                    android:inputType="textEmailAddress">
+                    android:inputType="textPassword">
                 </com.google.android.material.textfield.TextInputEditText>
             </com.google.android.material.card.MaterialCardView>
 
@@ -131,25 +116,17 @@
                     android:src="@drawable/padlock">
                 </ImageView>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="73dp"
-                    android:text="Confirma\ntu pass: "
-                    android:textColor="#FFFFFF"
-                    android:textSize="20dp">
-                </TextView>
-
                 <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="150dp"
+                    android:id="@+id/passconfirm"
+                    android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_gravity="center_vertical"
-                    android:hint="Confirma tu pass"
+                    android:hint="Confirma tu contraseña"
                     android:textColor="#FFFFFF"
-                    android:layout_marginLeft="185dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="10dp"
                     android:textColorHint="#FFFFFF"
-                    android:inputType="textEmailAddress">
+                    android:inputType="textPassword">
                 </com.google.android.material.textfield.TextInputEditText>
 
             </com.google.android.material.card.MaterialCardView>
