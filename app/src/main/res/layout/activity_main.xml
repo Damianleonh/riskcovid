@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#43FFFFFF"
-            android:text="Iniciar sesion"
+            android:text="Crear Zona"
             android:textColor="#000000"
             android:id="@+id/MainBtnLogin"></Button>
 

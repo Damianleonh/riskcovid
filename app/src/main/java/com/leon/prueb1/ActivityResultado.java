@@ -3,12 +3,15 @@ package com.leon.prueb1;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.ContextMenu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.leon.prueb1.includes.MyToolbar;
@@ -61,6 +64,13 @@ public class ActivityResultado extends AppCompatActivity implements View.OnClick
         inmuno.setOnClickListener(this);
         edadavaz.setOnClickListener(this);
 
+        registerForContextMenu(diabetes);
+        registerForContextMenu(hipertension);
+        registerForContextMenu(enfpulmonar);
+        registerForContextMenu(enfrenal);
+        registerForContextMenu(inmuno);
+        registerForContextMenu(edadavaz);
+
     }
 
     @Override
@@ -109,5 +119,46 @@ public class ActivityResultado extends AppCompatActivity implements View.OnClick
                 break;
 
         }
+    }
+
+
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        switch (v.getId()) {
+            case R.id.actResulBtnDiabetes:
+                getMenuInflater().inflate(R.menu.opciones, menu);
+                break;
+            case R.id.actResulBtnHipertension:
+                getMenuInflater().inflate(R.menu.opciones, menu);
+                break;
+            case R.id.actResulBtnPulmon:
+                getMenuInflater().inflate(R.menu.opciones, menu);
+                break;
+            case R.id.actResulBtnRenal:
+                getMenuInflater().inflate(R.menu.opciones, menu);
+                break;
+
+            case R.id.actResulBtnInmunosup:
+                getMenuInflater().inflate(R.menu.opciones, menu);
+                break;
+
+            case R.id.actResulBtnEdadav:
+                getMenuInflater().inflate(R.menu.opciones, menu);
+                break;
+        }
+    }
+
+    @Override
+    public boolean onContextItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.menudesOpcionInfo:
+                Toast.makeText(this, "El siguiente boton lleva a un link con informacion", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.menudesOpcionSalir:
+                Intent i = new Intent(ActivityResultado.this,MainActivity.class);
+                startActivity(i);
+                break;
+        }
+        return true;
     }
 }
