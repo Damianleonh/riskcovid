@@ -86,6 +86,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                     result.add(new LatLng(19.119891, -104.383136));
                     result.add(new LatLng(19.120535, -104.376951));
                     result.add(new LatLng(19.119927, -104.359613));
+                    result.add(new LatLng(37.4219983, -122.084));
 
 
 
